@@ -21,7 +21,7 @@
 //#define CR10S_MINI
 //#define CR10S_S4
 //#define CR10S_S5
-//#define CR10_V2
+#define CR10_V2
 //#define CR10_V3
 //#define CR10S_PRO         //V1 Model came with an 18mm probe pre-installed
 //#define CR10S_PRO_V2      //V2 Model came with a BLTouch pre-installed
@@ -58,7 +58,7 @@
 //#define TM3DAERO_EXTENDED
 //#define PETSFANG  //This is the RIGHT mounted version - if using the left mount please use the CUSTOM_PROBE option.
 //#define SPRITE_EXTRUDER_18MM_MOUNT // Mounts to the stock CRTouch bracket
-//#define CUSTOM_PROBE
+#define CUSTOM_PROBE
 
 // Filament Sensor - EZOut Kits
 // If you are using our EZOut filament sensor kit on your machine uncomment the below line.
@@ -126,7 +126,7 @@
 
 // If you need to reverse one or both motors use the below REVERSE_E#_MOTOR_DIRECTION options.
 // E0 is for your 1st hotend/extruder, E1 is for your 2nd hotend/extruder
-//#define REVERSE_E0_MOTOR_DIRECTION
+#define REVERSE_E0_MOTOR_DIRECTION
 //#define REVERSE_E1_MOTOR_DIRECTION
 
 //===========================================================================
@@ -196,7 +196,7 @@
   * If the probe is left of the nozzle the offset on X is NEGATIVE
   * If the probe is in front of the nozzle the offset on Y is NEGATIVE
   */
-  #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
+  #define NOZZLE_TO_PROBE_OFFSET { 44, 0, 0 }
 #endif
 
 
@@ -213,13 +213,13 @@
 // If you need to reverse the e motor direction also enabled the REVERSE_E_MOTOR_DIRECTION option.
 // Example EStep Values: TH3D Aluminum Extruder - 95 ESteps, TH3D Tough Extruder - 410 ESteps, BMG Extruder - 415 ESteps
 // When installing a Tough Extruder or E3D Titan or Bondtech that is Geared you likely need to enable the REVERSE_E_MOTOR_DIRECTION option
-//#define CUSTOM_ESTEPS
+#define CUSTOM_ESTEPS
 #define CUSTOM_ESTEPS_VALUE 410
-//#define REVERSE_E_MOTOR_DIRECTION
+#define REVERSE_E_MOTOR_DIRECTION
 
 // FILAMENT SENSOR UNLOAD SETTINGS -----------------
 // If you have a filament sensor that is physically mounted to the machine you can enable MOUNTED_FILAMENT_SENSOR to set the unload length to 5mm to prevent filament from backing up in the sensor by uncommenting MOUNTED_FILAMENT_SENSOR 
-//#define MOUNTED_FILAMENT_SENSOR
+#define MOUNTED_FILAMENT_SENSOR
 
 // If you have a direct drive machine with a filament sensor uncomment DIRECT_DRIVE_PRINTER to decrease the unload length from 100mm to 20mm
 //#define DIRECT_DRIVE_PRINTER
@@ -338,9 +338,9 @@
 // BL TOUCH ----------------------------------------
 // If you want to use the BL-Touch uncomment the 2 lines below and set your servo pin.
 // You also need to uncomment #define CUSTOM_PROBE above and then enter in your offsets above in the CUSTOM PROBE section.
-//#define BLTOUCH
+#define BLTOUCH
 // Here is where you set your servo pin.
-//#define SERVO0_PIN 11
+#define SERVO0_PIN 11
 
 // MANUAL MESH LEVELING ----------------------------
 // If you want to use manual mesh leveling you can enable the below option. This is for generating a MANUAL mesh WITHOUT a probe. To change the mesh inset value change the EZABL_PROBE_EDGE setting above.
